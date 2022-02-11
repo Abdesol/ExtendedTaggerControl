@@ -8,5 +8,6 @@
 
     <Application.Styles>
         <FluentTheme Mode="Light"/>
+		<StyleInclude Source="/Styles/ExtendedTaggerControlStyles.axaml" />
     </Application.Styles>
 </Application>

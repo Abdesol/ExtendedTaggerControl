@@ -1,0 +1,24 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+		xmlns:controls="using:ExtendedTaggerControl.Sample.Controls"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <controls:ExtendedTaggerControl Tags="1,2,3" Width="200" Height="200" />
+        </Border>
+    </Design.PreviewWith>
+
+	<Style Selector="controls|ExtendedTaggerControl">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate>
+					<Grid RowDefinitions="Auto, Auto">
+						<ItemsPresenter
+							Items="{TemplateBinding Tags}"/>
+						<TextBox x:Name="PART_AddNewTagTextBox" 
+								 Grid.Row="1"  />
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</Styles>

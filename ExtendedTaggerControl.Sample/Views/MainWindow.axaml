@@ -3,7 +3,7 @@
         xmlns:vm="using:ExtendedTaggerControl.Sample.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:controls="using:ExtendedTaggerControl.Sample.Controllers"
+        xmlns:controls="using:ExtendedTaggerControl.Sample.Controls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="ExtendedTaggerControl.Sample.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
@@ -20,6 +20,8 @@
         
         <Button Grid.Row="1" Width="100" Height="30" Content="Get Tags" HorizontalAlignment="Center"
                 Margin="15" Command="{Binding GetCommand}"/>
+		
+		
     </Grid>
 
 </Window>
